@@ -14,10 +14,10 @@ namespace mrizka
         public Point position;
         public Pen outlineColor = Pens.Black;
         public Brush color = Brushes.Green;
-
+        public bool Locked = false;
         public Brush CurrentColor;
-
-        private int size;
+        public int ColorsChanged = 0;
+        public int size;
 
         public Ctverecek(Point position)
         {
